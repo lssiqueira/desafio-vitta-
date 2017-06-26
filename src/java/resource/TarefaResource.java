@@ -125,6 +125,11 @@ public class TarefaResource {
      * POST metodo de criação de tarefas
      * @param json json vindo do front-end que será inserido como nova tarefa no arquivo json
      * @return json resultante após a adição das novas informações
+     * exemplo de json que o serviço está esperando:
+     * [{"id":2,"descricao":"tarefa 3",
+     * "dataEHoraRealizada":"Realizada ás: 22/06/2017 - 8:41 - AM","tempoDeDuracao":0,
+     * "lembrete":0,"dataEHoraCriacao":"Criado ás: 22/06/2017 - 8:41 - AM",
+     * "dataEHoraEdicao":"Editado ás: ","dataEHoraRemocao":"Removido ás: ","realizada":true}]
      */
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
